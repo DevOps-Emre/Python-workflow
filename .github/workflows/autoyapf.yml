@@ -2,8 +2,11 @@
 name: Formatting python code
 on:
   push:
-    paths:
-    - '**.py'
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+    #paths:
+    #- '**.py'
 jobs:
   autoyapf:
     runs-on: ubuntu-latest
